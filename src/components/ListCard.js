@@ -12,11 +12,11 @@ const ListCard = (props) => {
       <div className={`flex ${flexType}`}>
         <div className="product-image p-2">
           {flexType === "flex-row" ? (
-            <div class="relative w-32 h-32 flex-shrink-0">
-              <div class="absolute left-1 top-3 w-full h-full flex items-center justify-center">
+            <div class="relative w-36 h-36 md:w-40 md:h-40 lg:w-48 lg:h-48 flex-shrink-0">
+              <div class="absolute w-full h-full flex items-center justify-center">
                 <img
                   alt="Placeholder"
-                  class="absolute left-0 top-0 w-full h-full object-cover object-center transition duration-50"
+                  class="absolute w-full h-full object-cover object-center"
                   src={productData.image[0].url}
                 ></img>
               </div>
@@ -45,7 +45,7 @@ const ListCard = (props) => {
           </div>
 
           <div className="mt-4 flex gap-2">
-            <button className="button-primary md:w-full px-6 py-2 rounded-md text-white font-medium tracking-wider transition bg-yellow-500/80">
+            <button className="button-primary md:w-full md:mt-9 px-6 py-2 rounded-md text-white font-medium tracking-wider transition bg-yellow-500/80">
               Add to cart
             </button>
           </div>

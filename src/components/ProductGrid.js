@@ -1,8 +1,11 @@
 import { useEffect, useState } from "react";
-// import GridCard from "./GridCard";
 import ListCard from "./ListCard";
 
 import { ProductApi } from "../utils/axios";
+
+// import GridCard from "./GridCard";
+
+/* try ListCard Comp also if want only grid view */
 
 function ProductGrid() {
   const [flexType, setFlexType] = useState("flex-col");
@@ -22,7 +25,7 @@ function ProductGrid() {
   };
 
   return (
-    <section class="w-fit mx-auto justify-items-center justify-center mt-10 mb-5">
+    <section class="w-full justify-items-center justify-center">
       <div class="flex justify-end items-center w-full px-8 py-6">
         <button
           onClick={() => {
