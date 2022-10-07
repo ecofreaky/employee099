@@ -3,7 +3,7 @@ import image from "../assets/product.webp";
 const GridCard = () => {
   return (
     <div className="card bg-white text-gray-700 w-72 border overflow-hidden">
-      <img className="px-5 pt-3 pb-2" src={image}></img>
+      <img className="px-5 pt-3 pb-2" src={image} alt=""></img>
 
       <div className="px-5 pb-4 flex flex-col gap-3">
         <span>Brand Name</span>
