@@ -23,7 +23,8 @@ const ListCard = (props) => {
             </div>
           ) : (
             <img
-              className="object-cover object-center"
+              // style={"height: 271px; width:100%; object-fit:contain"}
+              className="w-full object-contain h-72"
               src={productData.image[0].url}
               alt=""
             ></img>

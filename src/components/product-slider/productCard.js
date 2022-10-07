@@ -9,7 +9,7 @@ const ProductCard = (props) => {
         <div className="product-image">
           <img
             className="px-5 pt-3 pb-2"
-            src={productData.image[0].url}
+            src={productData?.image[0].url}
             alt=""
           ></img>
         </div>

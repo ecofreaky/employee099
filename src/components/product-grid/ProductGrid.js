@@ -6,7 +6,7 @@ import { ProductApi } from "../../utils/axios";
 function ProductGrid() {
   const [flexType, setFlexType] = useState("flex-col");
   const [productArray, setProductArray] = useState([]);
-
+  const [filterProduct, setFilter] = useState([]);
   useEffect(() => {
     getProduct();
   }, []);
@@ -15,13 +15,14 @@ function ProductGrid() {
     try {
       const productData = await ProductApi.fetchProduct();
       setProductArray(productData?.data);
+      console.log(productData);
     } catch (err) {
       console.log(err.message);
     }
   };
 
   return (
-    <section class="w-full justify-items-center justify-center">
+    <>
       <div class="flex justify-end items-center w-full px-8 py-6">
         <button
           onClick={() => {
@@ -186,23 +187,24 @@ function ProductGrid() {
           <p class="hidden md:block text-sm leading-none">Grid</p>
         </button>
       </div>
-
-      <div
-        className={
-          flexType === "flex-col"
-            ? `grid grid-cols-2 lg:grid-cols-3 md:grid-cols-2 gap-y-4 gap-x-4`
-            : `grid grid-cols-1 gap-y-4 gap-x-4`
-        }
-      >
-        {productArray.map((product) => (
-          <ListCard
-            flexType={flexType}
-            productData={product}
-            key={product._id}
-          ></ListCard>
-        ))}
-      </div>
-    </section>
+      <section class="w-fit mx-auto">
+        <div
+          className={
+            flexType === "flex-col"
+              ? `grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 gap-y-4 gap-x-4`
+              : `grid grid-cols-1 gap-y-4 gap-x-4`
+          }
+        >
+          {productArray.map((product) => (
+            <ListCard
+              flexType={flexType}
+              productData={product}
+              key={product._id}
+            ></ListCard>
+          ))}
+        </div>
+      </section>
+    </>
   );
 }
 
