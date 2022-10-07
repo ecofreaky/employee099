@@ -2,9 +2,9 @@ import logo from "../../assets/logo.png";
 
 const Email = () => {
   return (
-    <div class="flex items-center justify-center min-h-screen p-4 bg-blue-100 min-w-screen">
+    <div class="flex items-center justify-center p-4 bg-blue-100">
       <div class="max-w-xl text-gray-800 bg-white shadow-xl lg:max-w-3xl rounded-3xl lg:p-12">
-        <nav class="hidden space-x-10 md:flex">
+        <nav class="md:flex">
           <div class="flex justify-center lg:w-0 lg:flex-1">
             <a href="#">
               <img class="mb-4 sm:h-24" src={logo} alt=""></img>

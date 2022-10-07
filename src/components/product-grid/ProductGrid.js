@@ -1,11 +1,7 @@
 import { useEffect, useState } from "react";
 import ListCard from "./ListCard";
 
-import { ProductApi } from "../utils/axios";
-
-// import GridCard from "./GridCard";
-
-/* try ListCard Comp also if want only grid view */
+import { ProductApi } from "../../utils/axios";
 
 function ProductGrid() {
   const [flexType, setFlexType] = useState("flex-col");
@@ -199,7 +195,11 @@ function ProductGrid() {
         }
       >
         {productArray.map((product) => (
-          <ListCard flexType={flexType} productData={product}></ListCard>
+          <ListCard
+            flexType={flexType}
+            productData={product}
+            key={product._id}
+          ></ListCard>
         ))}
       </div>
     </section>
