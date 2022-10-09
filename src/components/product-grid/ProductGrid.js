@@ -7,6 +7,7 @@ function ProductGrid() {
   const [flexType, setFlexType] = useState("flex-col");
   const [productArray, setProductArray] = useState([]);
   const [filterProduct, setFilter] = useState([]);
+
   useEffect(() => {
     getProduct();
   }, []);
@@ -23,7 +24,7 @@ function ProductGrid() {
 
   return (
     <>
-      <div class="flex justify-end items-center w-full px-8 py-6">
+      <div className="flex justify-end items-center w-full px-8 py-6">
         <button
           onClick={() => {
             setFlexType("flex-row");
@@ -187,7 +188,7 @@ function ProductGrid() {
           <p class="hidden md:block text-sm leading-none">Grid</p>
         </button>
       </div>
-      <section class="w-fit mx-auto">
+      <section className="w-fit mx-auto">
         <div
           className={
             flexType === "flex-col"

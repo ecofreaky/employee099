@@ -7,7 +7,7 @@ import Email from "./components/email/email";
 import HeroSlider from "./components/hero-slider/hero-slider";
 import ProductCarousel from "./components/product-slider/productCarousel";
 import ProductPage from "./components/product-filter/product-page";
-import { FilterProduct } from "./container/filter-product";
+import OrderDetail from "./components/order/order-detail";
 
 function App() {
   return (
@@ -17,7 +17,8 @@ function App() {
       <Route path="/email" element={<Email />}></Route>
       <Route path="/hero-slider" element={<HeroSlider />}></Route>
       <Route path="/product-carousel" element={<ProductCarousel />}></Route>
-      <Route path="/product-filter" element={<FilterProduct />}></Route>
+      <Route path="/product-filter" element={<ProductPage />}></Route>
+      <Route path="/order" element={<OrderDetail />}></Route>
     </Routes>
   );
 }

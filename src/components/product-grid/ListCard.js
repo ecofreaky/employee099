@@ -16,7 +16,7 @@ const ListCard = (props) => {
               <div class="absolute w-full h-full flex items-center justify-center">
                 <img
                   alt="Placeholder"
-                  class="absolute w-full h-full object-cover object-center"
+                  class="absolute w-full object-contain object-center"
                   src={productData.image[0].url}
                 ></img>
               </div>
@@ -24,7 +24,7 @@ const ListCard = (props) => {
           ) : (
             <img
               // style={"height: 271px; width:100%; object-fit:contain"}
-              className="w-full object-contain h-72"
+              className="w-full object-contain lg:h-60 h-40"
               src={productData.image[0].url}
               alt=""
             ></img>
@@ -37,12 +37,12 @@ const ListCard = (props) => {
 
           <div>
             <span className="text-xl font-bold">₹ {productData.pprice}</span>
-            {/* <div className="flex items-center gap-2 mt-1">
+            <div className="flex items-center gap-2 mt-1">
               <span className="text-sm line-through opacity-50">₹ 2000</span>
               <span className="discount-percent bg-green-400 px-1.5 py-0.5 rounded-md text-xs text-white">
                 save 20%
               </span>
-            </div> */}
+            </div>
           </div>
 
           <div className="mt-4 flex gap-2">
