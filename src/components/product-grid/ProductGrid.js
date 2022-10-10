@@ -6,7 +6,6 @@ import { ProductApi } from "../../utils/axios";
 function ProductGrid() {
   const [flexType, setFlexType] = useState("flex-col");
   const [productArray, setProductArray] = useState([]);
-  const [filterProduct, setFilter] = useState([]);
 
   useEffect(() => {
     getProduct();

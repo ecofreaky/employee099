@@ -77,7 +77,7 @@ const Products = () => {
       <div className="flex justify-end items-center w-full px-8 py-6">
         <select
           id="countries"
-          className="bg-gray-50 mx-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="bg-gray-50 mx-2 border border-gray-300 text-gray-900 text-sm rounded-lg"
           value={categoryFilter}
           onChange={(event) => {
             setCategoryFilter(event.target.value);
@@ -92,7 +92,7 @@ const Products = () => {
 
         <select
           id="countries"
-          className="bg-gray-50 mx-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="bg-gray-50 mx-2 border border-gray-300 text-gray-900 text-sm rounded-lg"
           value={colorsFilter}
           onChange={(event) => {
             // setColorsFilter(event.target.value)
@@ -109,7 +109,7 @@ const Products = () => {
 
         <select
           id="countries"
-          className="bg-gray-50 mx-2 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+          className="bg-gray-50 mx-2 border border-gray-300 text-gray-900 text-sm rounded-lg"
           value={sizeFilter}
           onChange={(event) => {
             setSizeFilter(event.target.value);

@@ -46,7 +46,7 @@ const ListCard = (props) => {
           </div>
 
           <div className="mt-4 flex gap-2">
-            <button className="button-primary md:w-full md:mt-9 px-6 py-2 rounded-md text-white font-medium tracking-wider transition bg-yellow-500/80">
+            <button className="bg-blue text-green md:w-full md:mt-9 px-6 py-2 rounded-md font-medium">
               Add to cart
             </button>
           </div>
