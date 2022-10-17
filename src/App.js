@@ -10,6 +10,8 @@ import ProductPage from "./components/product-filter/product-page";
 import OrderDetail from "./components/order/order-detail";
 import ProductWrapper from "./components/product-filter/ProductWrapper";
 import Orders from "./components/order/orders";
+import Pos from "./components/pos/pos";
+import Account from "./components/myaccount/account";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Route path="/filter" element={<ProductWrapper />}></Route>
       <Route path="/orders" element={<Orders />}></Route>
       <Route path="/orders/:id" element={<OrderDetail />}></Route>
+      <Route path="/pos" element={<Pos />}></Route>
+      <Route path="/account" element={<Account />}></Route>
     </Routes>
   );
 }

@@ -12,7 +12,7 @@ const Products = () => {
     let arr = [...colorsFilter];
 
     let checkIfContain = arr.includes(color.toLowerCase());
-    console.log(checkIfContain);
+    // console.log(checkIfContain);
     if (!checkIfContain) {
       arr.push(color.toLowerCase());
       setColorsFilter(arr);
@@ -133,9 +133,9 @@ const Products = () => {
       </div> */}
       <section className="w-fit mx-auto">
         <div className="grid grid-cols-2 lg:grid-cols-4 md:grid-cols-2 gap-y-4 gap-x-4">
-          {filterProducts().map((item, key) => {
-            return <GridCard productData={item} key={key}></GridCard>;
-          })}
+          {filterProducts().map((item, key) => (
+            <GridCard productData={item} key={key}></GridCard>
+          ))}
         </div>
       </section>
     </>
